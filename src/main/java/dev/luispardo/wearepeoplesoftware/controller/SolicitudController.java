@@ -1,6 +1,6 @@
 package dev.luispardo.wearepeoplesoftware.controller;
 
-import dev.luispardo.wearepeoplesoftware.model.Solicitud;
+import dev.luispardo.wearepeoplesoftware.Solicitud;
 import dev.luispardo.wearepeoplesoftware.service.SolicitudService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
