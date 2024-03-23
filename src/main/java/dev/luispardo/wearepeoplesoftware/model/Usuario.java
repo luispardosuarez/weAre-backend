@@ -3,13 +3,16 @@ package dev.luispardo.wearepeoplesoftware.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "Usuarios")
 public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String nombreUsuario;
+    @Column(nullable = false)
     private String contrasena;
 
     @Enumerated(EnumType.STRING)

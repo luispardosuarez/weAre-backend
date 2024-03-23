@@ -1,6 +1,6 @@
 package dev.luispardo.wearepeoplesoftware.controller;
 
-import dev.luispardo.wearepeoplesoftware.Solicitud;
+import dev.luispardo.wearepeoplesoftware.model.Solicitud;
 import dev.luispardo.wearepeoplesoftware.service.SolicitudService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/solicitudes")
+@RequestMapping("${api-endpoint}/solicitudes")
 public class SolicitudController {
 
     @Autowired

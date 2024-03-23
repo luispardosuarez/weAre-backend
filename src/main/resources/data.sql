@@ -1,0 +1,2 @@
+INSERT INTO usuarios (id, nombre_usuario, contrasena, rol) VALUES (1, 'luis', 'pardo', 'DIRECTOR');
+INSERT INTO solicitudes (id, caracteristicas, responsabilidades, requisitos, prueba_tecnica, estado_aprobacion, estado_publicacion) VALUES (1, 'a', 'a', 'a', 0, true, true);

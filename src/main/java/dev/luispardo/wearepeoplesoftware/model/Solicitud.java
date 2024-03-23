@@ -3,20 +3,26 @@ package dev.luispardo.wearepeoplesoftware.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "Solicitudes")
 public class Solicitud {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    
+    @Column(nullable = false)
     private String caracteristicas;
+    @Column(nullable = false)
     private String responsabilidades;
+    @Column(nullable = false)
     private String requisitos;
 
     @Lob
     private Byte[] pruebaTecnica;  // Considera almacenar solo la referencia del archivo
 
+    @Column(nullable = false)
     private boolean estadoAprobacion;
+    @Column(nullable = false)
     private boolean estadoPublicacion;
 
     public Long getId() {

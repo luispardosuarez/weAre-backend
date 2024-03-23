@@ -1,6 +1,6 @@
 package dev.luispardo.wearepeoplesoftware.security;
 
-import dev.luispardo.wearepeoplesoftware.weArepeoplesoftware.model.Usuario;
+import dev.luispardo.wearepeoplesoftware.model.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
