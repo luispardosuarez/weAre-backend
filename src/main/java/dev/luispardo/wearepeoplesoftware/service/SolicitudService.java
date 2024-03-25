@@ -22,7 +22,7 @@ public class SolicitudService {
     }
 
     public Solicitud update(Solicitud solicitud) {
-        // Aquí iría la lógica para actualizar una solicitud
+        // lógica para actualizar una solicitud
         return solicitudRepository.save(solicitud);
     }
 
