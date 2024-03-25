@@ -17,7 +17,7 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        // Aquí asignas los roles/permisos del usuario, por ejemplo:
+        //Asignar los roles/permisos del usuario, por ejemplo:
         return Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + usuario.getRol().name()));
     }
 
@@ -29,6 +29,10 @@ public class UserPrincipal implements UserDetails {
     @Override
     public String getUsername() {
         return usuario.getNombreUsuario();
+    }
+
+    public Usuario getUsuario() {
+        return this.usuario;
     }
 
     @Override

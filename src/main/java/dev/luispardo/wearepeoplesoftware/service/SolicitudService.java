@@ -22,7 +22,6 @@ public class SolicitudService {
     }
 
     public Solicitud update(Solicitud solicitud) {
-        // lógica para actualizar una solicitud
         return solicitudRepository.save(solicitud);
     }
 
